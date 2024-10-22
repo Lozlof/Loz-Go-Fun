@@ -7,9 +7,15 @@ package main
 // The import statement is used to bring in other packages from the Go standard library.
 // It allows you to access functions, types, and methods that are defined in other packages. 
 import "fmt" // Importing fmt package for formatted I/O.
-import "math" // Importing math package for mathematical functions.
+
+// Imports can also be done with an import block.
+import (
+	"math" // Importing math package for mathematical functions.
+	"customPackages/ocstpkg" // Import custom made package.
+)
 
 func main() {
 	fmt.Println("Hello, World!") // Using fmt package to print to console.
-	fmt.Println(math.Sqrt(16)) // Using math package to calculate square root
+	fmt.Println(math.Sqrt(16)) // Using math package to calculate square root.
+	fmt.Println(ocstpkg.Greet()) // Using the Greet function from the ocstpkg package.
 }
