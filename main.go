@@ -11,7 +11,7 @@ import "fmt" // Importing fmt package for formatted I/O.
 // Imports can also be done with an import block.
 import (
 	"math" // Importing math package for mathematical functions.
-	"customPackages/ocstpkg" // Import custom made package.
+	"/customPackages/ocstpkg" // Import custom made package.
 )
 
 func main() {
