@@ -1,2 +1,2 @@
 # Loz-Go-Fun
-Learning Purposes
+For Learning Purposes
