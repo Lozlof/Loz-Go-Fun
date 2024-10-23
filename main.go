@@ -1,7 +1,8 @@
-// go mod init Loz-Go-Fun
-// go get rsc.io/quote
-// go build main.go
-// go mod tidy
+// go mod init Loz-Go-Fun : Creates a new module, initializing the go.mod file that describes it.
+// go get rsc.io/quote : Changes the required version of a dependency (or adds a new dependency).
+// go mod tidy : Removes unused dependencies.
+// go build, go test, and other package-building commands add new dependencies to go.mod as needed.
+// go run . : Compiles and the Go program in one step.
 
 // Package declaration.
 // The main package is special in Go because it's used for programs that are meant to be executable.
