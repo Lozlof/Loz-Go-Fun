@@ -1,3 +1,8 @@
+// go mod init Loz-Go-Fun
+// go get rsc.io/quote
+// go build main.go
+// go mod tidy
+
 // Package declaration.
 // The main package is special in Go because it's used for programs that are meant to be executable.
 // Every Go program that you want to run must have a main package, and within that package, it must have a main function. 
