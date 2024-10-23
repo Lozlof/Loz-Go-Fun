@@ -9,11 +9,18 @@ package main
 import "fmt" // Importing fmt package for formatted I/O.
 
 // Imports can also be done with an import block.
+// You can search for packages at https://pkg.go.dev
 import (
 	"math" // Importing math package for mathematical functions.
+	"rsc.io/quote/v4"
 )
 
 func main() {
 	fmt.Println("Hello, World!") // Using fmt package to print to console.
 	fmt.Println(math.Sqrt(16)) // Using math package to calculate square root.
+	// "quote" is the package and "Go" is the function inside the package.
+    	// Meaning you need to know the source code of the package and the function, or at least know how to use them.
+    	// Package info: https://pkg.go.dev/rsc.io/quote/v4#Go
+    	// Function source code: https://github.com/rsc/quote/blob/v4.0.1/quote.go#L22
+	fmt.Println(quote.Go())
 }
