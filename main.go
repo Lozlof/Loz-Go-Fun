@@ -1,3 +1,6 @@
+// go env GOPATH : View environmental variable GOPATH.
+// go env : View all environmental variables.
+
 // go mod init Loz-Go-Fun : Creates a new module, initializing the go.mod file that describes it.
 // go get rsc.io/quote : Changes the required version of a dependency (or adds a new dependency).
 // go mod tidy : Removes unused dependencies.
@@ -30,3 +33,30 @@ func main() {
     	// Function source code: https://github.com/rsc/quote/blob/v4.0.1/quote.go#L22
 	fmt.Println(quote.Go())
 }
+
+// In bash, home directory:
+// mkdir ~/greetings, cd greetings
+// go mod init example.com/greetings, go.mod file is created in ~/greetings
+// The go mod init command creates a go.mod file to track your code's dependencies. So far, the file includes only the name of your module and the Go version your code supports. But as you add dependencies, the go.mod file will list the versions your code depends on. This keeps builds reproducible and gives you direct control over which module versions to use.
+// nano greetings.go, pasted the code into the file and saved.
+// mkdir ~/hello, cd hello
+// go mod init example.com/hello
+
+// greetings.go 
+//// package greetings
+//import "fmt"
+//// Hello returns a greeting for the named person.
+//func Hello(name string) string {
+    //// Return a greeting that embeds the name in a message.
+    //message := fmt.Sprintf("Hi, %v. Welcome!", name)
+    //return message
+//}
+// This function takes a name parameter whose type is string. The function also returns a string.
+// In Go, a function whose name starts with a capital letter can be called by a function not in the same package. This is known in Go as an exported name.
+// Function name: "Hello"
+// Parameter type: "string"
+// Return type: "string"
+// In Go, the := operator is a shortcut for declaring and initializing a variable in one line (Go uses the value on the right to determine the variable's type). 
+// Taking the long way, you might have written this as:
+// var message string
+// message = fmt.Sprintf("Hi, %v. Welcome!", name)
