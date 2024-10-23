@@ -12,7 +12,7 @@ import "fmt" // Importing fmt package for formatted I/O.
 // You can search for packages at https://pkg.go.dev
 import (
 	"math" // Importing math package for mathematical functions.
-	"rsc.io/quote/v4"
+	"rsc.io/quote"
 )
 
 func main() {
