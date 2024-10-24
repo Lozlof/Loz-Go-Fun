@@ -7,5 +7,5 @@ https://go.dev/blog/slices-intro
 **Properties:**      
 - ``len(slice)``: The length of the slice.              
 - ``cap(slice)``: The capacity of the slice, which is the maximum length the slice can grow without allocating more memory.        
-**From Go:**      
+#### From Go:     
 A slice is like an array, except that its size changes dynamically as you add and remove items. The slice is one of Go's most useful types.
