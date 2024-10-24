@@ -1,7 +1,7 @@
 ## Go Slice   
 https://go.dev/blog/slices-intro    
 #### A slice is a reference type in Go that represents a segment of an underlying array.   
-- Slices are more flexible than arrays because their size can grow or shrink dynamically.    
+#### Slices are more flexible than arrays because their size can grow or shrink dynamically.    
 **Dynamic resizing:** Although slices have a fixed size once initialized, you can create new slices with larger capacities using the built-in append() function.       
 **Underlying array:** A slice always points to an underlying array. Modifying the slice will modify the original array.        
 **Properties:**      
