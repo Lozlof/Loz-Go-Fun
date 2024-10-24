@@ -31,3 +31,8 @@ func main() {
     // If no errors, prints the returned message.
     fmt.Println(message)
 }
+
+// Output
+// Error
+	// greetings: 16:33:18 empty name
+	// exit status 1
