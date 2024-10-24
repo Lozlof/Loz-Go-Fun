@@ -13,7 +13,7 @@ func main() {
 
 	// Request a greeting message.
 	// Function call.
-	message, err := greetings.Hello("")
+	message, err := greetings.Hello("Justin")
 	// Calling the Hello function from the greetings package.
 	// ("") (Empty string) Is getting passed to the Hello function.
 	// The Hello function will return its message and error depending on what is passed here.

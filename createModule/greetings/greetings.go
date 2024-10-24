@@ -4,6 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"math/rand"
+	"time" // Had to import time in order for rand.Seed to work.
 )
 
 // Hello returns a greeting for the named person.
@@ -40,8 +41,12 @@ func randomFormat() string {
 	formats := []string{
 		"Hi, %v. Welcome!",
 		"Great to see you, %v!",
-		"Hail, %v! Well met!"
+		"Hail, %v! Well met!",
+		"Greetings! %v!",
+		"Good Day! %v, how are you?",
 	}
+
+	rand.Seed(time.Now().UnixNano()) // Have to seed for rand.Intn to work.
 
 	return formats[rand.Intn(len(formats))]
 	// From: https://pkg.go.dev/math/rand#Intn
