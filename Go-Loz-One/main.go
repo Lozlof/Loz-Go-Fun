@@ -33,3 +33,5 @@ func main() {
     	// Function source code: https://github.com/rsc/quote/blob/v4.0.1/quote.go#L22
 	fmt.Println(quote.Go())
 }
+
+// To compile a stand alone executable, run: go build -o GoLozFun
