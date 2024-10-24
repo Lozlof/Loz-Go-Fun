@@ -12,9 +12,22 @@ func main() {
 	log.SetFlags(2) // The flags determine what additional information will be shown in the message. 2 should mean Ldate and Ltime. https://pkg.go.dev/log#Ldate
 
 	// Request a greeting message.
-	
+	// Function call.
+	message, err := greetings.Hello("")
+	// Calling the Hello function from the greetings package.
+	// ("") (Empty string) Is getting passed to the Hello function.
+	// The Hello function will return its message and error depending on what is passed here.
+	// The return value goes into message and err.
+	// message and err are declared.
 
-    // Get a greeting message and print it.
-    message := greetings.Hello("Gladys")
+	if err != nil {
+		log.Fatal(err)
+	}
+	// if err is not null.
+	// Function call on log.Fatal passing err.
+	// Prints string err to the console. 
+	// Exits.
+
+    // If no errors, prints the returned message.
     fmt.Println(message)
 }
