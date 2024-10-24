@@ -29,6 +29,10 @@ func Hello(name string) (string, error) {
 // Since this function always has to return both a string and an error, 
 // if the function completes successfully and no errors occur, the error returned is nil.
 
+func Hellos(names []string) (map[string]string, error) {
+	// Leave off at: https://go.dev/doc/tutorial/greetings-multiple-people
+}
+
 // Function declaration.
 // Name: randomFormat
 // Note: That randomFormat starts with a lowercase letter, making it accessible only to code in its own package (in other words, it's not exported). 
