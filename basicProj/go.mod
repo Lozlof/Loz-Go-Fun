@@ -1,4 +1,4 @@
-module Go-Loz-One
+module basicProj
 
 go 1.19
 
